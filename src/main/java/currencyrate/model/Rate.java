@@ -5,8 +5,8 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 public class Rate {
-    private String code;
-    private Float rate;
+    private final String code;
+    private final Float rate;
 
     @XmlJavaTypeAdapter(LocalDateAdapter.class)
     private LocalDate date;
